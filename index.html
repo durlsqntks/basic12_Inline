@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin :0; padding: 0;}
+
+        .All
+        {
+            background-color: rgb(85, 196, 58);
+            width: 800px;
+            margin:auto;
+        }
+            .Block1
+            {
+                background-color: rgb(185, 64, 64);
+            }
+            .Block2
+            {
+                background-color: rgb(223, 186, 22);
+            }
+                .Block2 .Inline1
+                {
+                    background-color: rgb(192, 46, 185);
+                }
+                .Block2 .Inline2
+                {
+                    background-color: rgb(141, 13, 135);
+                    display: block;
+                    text-align: center;
+                }
+                .Block2 .Inline3
+                {
+                    background-color: rgb(255, 2, 242);
+                    text-align: center;
+                    
+                }
+                    .Block2 .Inline3:before
+                    {
+                        content: "before";
+                    }
+                    .Block2 .Inline3:after
+                    {
+                        content: "after";
+                        display: block;
+                    }
+
+    </style>
+</head>
+
+<body>
+    <div class="All">
+        <div class="Block1">블록(모든 넓이를 채움)</div>
+        <div class="Block2">
+            <span class="Inline1">인라인1</span>
+            <span class="Inline2">인라인2</span>
+            <span class="Inline3">인라인3</span>
+        </div>
+    </div>
+</body>
+</html>
